@@ -11,7 +11,7 @@ const apiKey = '27c82ebc';
 function getMovies(searchText) {
     console.log(searchText);
     let s = searchText;
-    axios.get('http://www.omdbapi.com/?apikey=' + apiKey + '&s=' + s)
+    axios.get('https://www.omdbapi.com/?apikey=' + apiKey + '&s=' + s)
         .then((response) => {
             console.log(response);
             let movies = response.data.Search;
